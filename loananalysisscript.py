@@ -96,21 +96,8 @@ def identify_high_inq_derog(row):
 
 complete_data['High_Inquries_and_Public_Records'] = complete_data.apply(identify_high_inq_derog, axis=1)
 
-# An introduction to classes
 
-class Person:
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
-
-    def greet(self):
-        return f"Hello, my name is {self.name} and I am {self.age} years old."
-
-    def adult(self):
-        if self.age >= 18:
-            return "I'm an adult."
-        else:
-            return "I'm not an adult."
+       
 
 # Create an instance of a class
 person1 = Person("Dee", 32)
