@@ -35,14 +35,7 @@ complete_data.duplicated().sum()
 # Dropping duplicates
 complete_data = complete_data.drop_duplicates()
 
-# Functions in python
 
-def add_numbers(number1, number2):
-    sum = number1 + number2
-    return sum
-
-result = add_numbers(10,15)
-print(result)
 
 # Define a function to categorize purpose into broader categories
 
@@ -58,18 +51,8 @@ categorize_purpose('credit_card')
 
 complete_data['purpose_category'] = complete_data['purpose'].apply(categorize_purpose)
 
-# Creating a conditional statement function
 
-def check_number(number):
-    if number > 0:
-        return "Positive"
-    elif number < 0:
-        return "Negative"
-    else:
-        return "Zero"
 
-result = check_number(0)
-print(result)
 
 # Create a new function based on criteria
 # If the dti ratio is more than 20 and the delinq.2years is greater than 2 and the revol.util>60 then the borrower is high risk
